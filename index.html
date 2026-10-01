@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abhishek Pradhan — Python & Django Developer Portfolio">
+  <title>Abhishek Pradhan | Python & Django Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="navbar" id="navbar">
+    <a class="logo" href="#home" aria-label="Home"><span>AP</span><b>Abhishek.</b></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    <nav id="navMenu">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="theme-switch" title="Switch theme"><button id="themeToggle" aria-label="Toggle light and soft-dark theme"><i class="fa-solid fa-moon"></i></button></div><a class="nav-cta" href="#contact">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Available for opportunities</div>
+        <h1>Building digital products<br>with <span class="gradient-text">Python & Django.</span></h1>
+        <p class="hero-copy">I'm Abhishek Pradhan, a developer focused on building clean, scalable and user-friendly web applications with modern backend technologies.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore My Work <i class="fa-solid fa-arrow-down"></i></a>
+          <a href="#contact" class="btn btn-ghost">Contact Me <i class="fa-regular fa-paper-plane"></i></a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Abhishek-PradhanGit" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek-pradhan-936979302/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:abhishek.pradhan.jsr@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="code-card tilt">
+          <div class="window-bar"><span></span><span></span><span></span><small>portfolio.py</small></div>
+          <pre><code><span class="purple">class</span> <span class="blue">Developer</span>:
+    name = <span class="green">"Abhishek"</span>
+    role = <span class="green">"Python Developer"</span>
+
+    <span class="purple">def</span> <span class="blue">build</span>(self):
+        <span class="purple">return</span> {
+          <span class="green">"backend"</span>: <span class="green">"Django"</span>,
+          <span class="green">"api"</span>: <span class="green">"REST"</span>,
+          <span class="green">"database"</span>: <span class="green">"SQL"</span>
+        }</code></pre>
+          <div class="code-footer"><i class="fa-solid fa-circle-check"></i> Clean code. Real results.</div>
+        </div>
+        <div class="floating-badge badge-python"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="floating-badge badge-django"><i class="fa-solid fa-layer-group"></i><span>Django</span></div>
+        <div class="experience-pill"><strong>01+</strong><span>Years learning<br>& building</span></div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="stats-grid reveal">
+        <div><strong data-count="10">0</strong><span>Projects built</span></div>
+        <div><strong data-count="5">0</strong><span>Core technologies</span></div>
+        <div><strong data-count="100">0</strong><span>% Curiosity</span></div>
+        <div><strong>∞</strong><span>Learning mindset</span></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal"><span>01 — About</span><h2>Turning ideas into<br><em>working software.</em></h2></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">I'm a developer who enjoys understanding how things work — from a simple Python function to a complete REST API.</p>
+          <p>My current focus is Python and Django, with hands-on experience building CRUD applications, REST APIs, database-backed systems and responsive frontends. I like writing practical code and learning by building real projects.</p>
+          <p>I'm currently pursuing my MCA and continuously expanding my development toolkit through projects, internships and problem solving.</p>
+          <div class="about-actions"><a class="text-link" href="#contact">Let's build something <i class="fa-solid fa-arrow-right"></i></a><a class="resume-btn" href="https://drive.google.com/file/d/1_WggJdVIzmX7rRtINuaEvBh_gHC_vB25/view?usp=drive_link" download><i class="fa-solid fa-download"></i> View/Download Resume</a></div>
+        </div>
+        <div class="about-photo-card reveal tilt">
+          <div class="profile-photo-wrap">
+            <!-- <img id="profilePhoto" src="#" alt="Abhishek Pradhan profile photo"> -->
+             <img id="profilePhoto" src="./assets/profile.png" alt="Abhishek Pradhan">
+          </div>
+          <!-- <div class="photo-url"><label for="photoUrl">Your photo URL</label><div><input id="photoUrl" type="url" placeholder="Paste image URL here"><button id="applyPhoto" type="button">Apply</button></div></div> -->
+        </div>
+        <div class="about-card reveal tilt">
+          <div class="about-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Developer mindset</h3>
+          <p>Learn → Build → Break → Debug → Improve</p>
+          <div class="mini-lines"><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading center reveal"><span>02 — Skills</span><h2>Tools I use to<br><em>build & ship.</em></h2></div>
+      <div class="skill-grid reveal">
+        <div class="skill-card"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Programming, OOP & automation</p><div class="bar"><i style="--w:88%"></i></div></div>
+        <div class="skill-card"><i class="fa-solid fa-server"></i><h3>Django</h3><p>Web apps, ORM & backend</p><div class="bar"><i style="--w:84%"></i></div></div>
+        <div class="skill-card"><i class="fa-solid fa-plug"></i><h3>REST API</h3><p>CRUD, JSON & DRF</p><div class="bar"><i style="--w:82%"></i></div></div>
+        <div class="skill-card"><i class="fa-solid fa-database"></i><h3>Databases</h3><p>SQLite, MySQL & SQL basics</p><div class="bar"><i style="--w:76%"></i></div></div>
+        <div class="skill-card"><i class="fa-brands fa-html5"></i><h3>HTML / CSS</h3><p>Responsive modern interfaces</p><div class="bar"><i style="--w:90%"></i></div></div>
+        <div class="skill-card"><i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>DOM, fetch & interactions</p><div class="bar"><i style="--w:72%"></i></div></div>
+        <div class="skill-card"><i class="fa-brands fa-git-alt"></i><h3>Git / GitHub</h3><p>Version control & deployment</p><div class="bar"><i style="--w:80%"></i></div></div>
+        <div class="skill-card"><i class="fa-solid fa-mobile-screen"></i><h3>Responsive UI</h3><p>Mobile-first layouts</p><div class="bar"><i style="--w:86%"></i></div></div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal"><span>03 — Selected work</span><h2>Projects that show<br><em>how I think.</em></h2></div>
+      <div class="project-grid">
+        <article class="project-card featured reveal tilt">
+          <div class="project-top"><span class="project-number">01</span><span class="project-type">Django / REST API</span></div>
+          <div class="project-visual api-visual"><div class="api-window"><div class="api-row"><b>GET</b><span>/api/students/</span><i>200</i></div><div class="api-row"><b>POST</b><span>/api/students/</span><i>201</i></div><div class="api-row"><b>PUT</b><span>/api/students/1/</span><i>200</i></div><div class="api-row"><b>DELETE</b><span>/api/students/2/</span><i>204</i></div></div></div>
+          <h3>Student CRUD API</h3><p>A complete REST API for creating, reading, updating and deleting student records using Django REST Framework and SQLite.</p>
+          <div class="tags"><span>Python</span><span>Django</span><span>DRF</span><span>SQLite</span></div>
+          <a href="https://github.com/Abhishek-PradhanGit/Student_crud" target="_blank" rel="noreferrer" class="project-link">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+        <article class="project-card reveal tilt">
+          <div class="project-top"><span class="project-number">02</span><span class="project-type">HTML / CSS / JS</span></div>
+          <div class="project-visual browser-visual"><div class="browser"><div class="browser-head"><span></span><span></span><span></span></div><div class="browser-body"><b>Calculator</b><div class="calc-mini"><i>7</i><i>8</i><i>9</i><i>+</i><i>4</i><i>5</i><i>6</i><i>−</i><i>1</i><i>2</i><i>3</i><i>×</i></div></div></div></div>
+          <h3>Web Calculator</h3><p>A responsive calculator project with a clean interface and JavaScript-based interactions.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://abhishek-pradhangit.github.io/Calc.-using-HTML-CSS-JS/" target="_blank" rel="noreferrer" class="project-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+        <article class="project-card reveal tilt">
+          <div class="project-top"><span class="project-number">04</span><span class="project-type">Frontend / Blog</span></div>
+          <div class="project-visual blog-visual"><div class="blog-mini"><span>MY BLOG</span><b>Ideas, Stories<br>& Knowledge</b><small>Technology · Programming · Career</small></div></div>
+          <h3>Blog Site</h3><p>A responsive blog platform featuring technology, programming, web development and career content.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://abhishek-pradhangit.github.io/Blog-site/" target="_blank" rel="noreferrer" class="project-link">Live Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+        <article class="project-card reveal tilt">
+          <div class="project-top"><span class="project-number">05</span><span class="project-type">Frontend / E-Commerce</span></div>
+          <div class="project-visual shop-visual"><div class="shop-mini"><span>ShopEase</span><b>Discover Your<br>Perfect Style</b><small>Fashion · Electronics · Shoes</small></div></div>
+          <h3>E-Commerce Website</h3><p>A modern shopping interface with categories, product cards, cart interactions and promotional sections.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://abhishek-pradhangit.github.io/ecomm/" target="_blank" rel="noreferrer" class="project-link">Live Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+        <article class="project-card coming-card reveal tilt">
+          <div class="project-top"><span class="project-number">06</span><span class="project-type">Coming Soon</span></div>
+          <div class="project-visual chat-visual"><i class="fa-regular fa-comments"></i><span>Chat App</span><small>Backend + real-time messaging</small></div>
+          <h3>Chat Application</h3><p>A full-stack chat application is currently in development. Backend, authentication and messaging features coming soon.</p>
+          <div class="tags"><span>Python</span><span>Django</span><span>Database</span></div>
+          <span class="project-link muted-link">Coming Soon <i class="fa-solid fa-hourglass-half"></i></span>
+        </article>
+        <article class="project-card reveal tilt">
+          <div class="project-top"><span class="project-number">03</span><span class="project-type">Frontend / UI</span></div>
+          <div class="project-visual dashboard-visual"><div class="dash-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="dash-card"></div></div>
+          <h3>Portfolio Website</h3><p>A responsive developer portfolio designed to present projects, skills and contact information professionally.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://abhishek-pradhangit.github.io/" target="_blank" rel="noreferrer" class="project-link">Live Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading center reveal"><span>04 — Experience</span><h2>Learning through<br><em>real projects.</em></h2></div>
+      <div class="timeline reveal">
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2026 — Present</div><div class="timeline-content"><span class="label">INTERNSHIP</span><h3>Python & Django Intern</h3><h4>Venturing Digitally Private Limited</h4><p>Working with Python and Django while gaining practical experience with backend development, web applications and real-world development workflows.</p></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2024 — Present</div><div class="timeline-content"><span class="label">EDUCATION</span><h3>Master of Computer Applications</h3><h4>MCA</h4><p>Building a strong foundation across software engineering, databases, operating systems, networking and application development.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section backend" id="backend">
+      <div class="backend-box reveal">
+        <div><span class="section-mini">BACKEND READY</span><h2>Next step: <em>Django.</em></h2><p>This portfolio is structured so the contact form can be connected to a Django REST API and database. The frontend is ready; backend integration can be added without redesigning the site.</p></div>
+        <div class="backend-stack"><span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-layer-group"></i> Django</span><span><i class="fa-solid fa-plug"></i> REST API</span><span><i class="fa-solid fa-database"></i> PostgreSQL / SQLite</span></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal">
+        <div class="contact-copy"><span>05 — Contact</span><h2>Have an idea?<br><em>Let's talk.</em></h2><p>Whether it's a job opportunity, collaboration or a project idea, send me a message.</p><div class="contact-details"><a href="mailto:abhishek.pradhan.jsr@gmail.com"><i class="fa-regular fa-envelope"></i> abhishek.pradhan.jsr@gmail.com</a><a href="https://github.com/Abhishek-PradhanGit" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a><a href="https://www.linkedin.com/in/abhishek-pradhan-936979302/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div></div>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row"><label>Name<input name="name" type="text" placeholder="Your name" required></label><label>Email<input name="email" type="email" placeholder="you@example.com" required></label></div>
+          <label>Subject<input name="subject" type="text" placeholder="How can I help?" required></label>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell me a little about your project..." required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+          <small id="formStatus"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-logo">AP</div><p>Designed & built by Abhishek Pradhan.</p><p>© <span id="year"></span> All rights reserved.</p></footer>
+  <button class="top-btn" id="topBtn" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
